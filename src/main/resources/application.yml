@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: safety-net
+  datasource:
+    url:
+    username: eu
+    password:
+    drive-class-name: org.h2.Driver
+  jpa:
+    database-plaform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+server:
+  port: 8080
