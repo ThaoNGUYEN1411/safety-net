@@ -12,14 +12,14 @@ public class PersonAssembler {
     return all.stream().map(this::toModel).toList();
   }
 
-  public PersonModel toModel(final Person p) {
+  public PersonModel toModel(final Person person) {
     return new PersonModel(
-      p.id(),
-      p.firstName(),
-      p.lastName(),
-      p.address(),
-      p.phone(),
-      p.email()
+      person.id(),
+      person.firstName(),
+      person.lastName(),
+      person.address(),
+      person.phone(),
+      person.email()
     );
   }
 }
